@@ -1,19 +1,26 @@
-// WhatsApp
-function chamarWhats() {
-  let numero = "5543984046323"; // seu número
-  let msg = "Olá! Gostaria de um orçamento.";
+// Rolagem suave
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
 
-  window.open(`https://wa.me/${numero}?text=${encodeURIComponent(msg)}`);
-}
+        const id = this.getAttribute('href');
 
-// ANIMAÇÃO AO SCROLL
-let elementos = document.querySelectorAll(".fade");
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
-window.addEventListener("scroll", () => {
-  elementos.forEach(el => {
-    let pos = el.getBoundingClientRect().top;
-    if (pos < window.innerHeight - 100) {
-      el.classList.add("show");
-    }
-  });
+// Animação ao aparecer na tela
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+    cards.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+
+        if (top < window.innerHeight - 50) {
+            card.style.opacity = 1;
+            card.style.transform = "translateY(0)";
+        }
+    });
 });

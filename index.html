@@ -1,76 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juliano Adesivos</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Ícones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<title>A R DE LIMA AZALEIA COMUNICAÇÃO VISUAL</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+
+<style>
+.topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background: #000;
+}
+
+/* AGORA GRANDE */
+.logo {
+    width: 500px !important;
+    max-width: none !important;
+    height: auto;
+}
+</style>
+
 </head>
+
 <body>
 
-<nav>
-  <h2>Alves Adesivos</h2>
-  <button onclick="chamarWhats()">Orçamento</button>
-</nav>
+<header class="topo">
+    <img src="logo.png" alt="Azaleia Comunicação Visual" class="logo">
+</header>
 
-<section class="hero fade">
-  <h1>Quero transformar seu ambiente sem bagunça e de maneira sofisticada</h1>
-  <p>Rápido • Limpo • Profissional</p>
-  <button onclick="chamarWhats()">Falar no WhatsApp</button>
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+        <h2>TRANSFORMAMOS SUA FACHADA EM UMA MÁQUINA DE VENDER</h2>
+        <p>Fachadas • Adesivos • Banners • Placas</p>
+        <a href="https://wa.me/5543999422005" class="btn">SOLICITAR ORÇAMENTO</a>
+    </div>
 </section>
 
-<section class="sobre fade">
-  <h2>Sobre</h2>
-  <p>
-    Meu objetivo é transformar sua casa de forma rápida, segura e responsável, sem sujeira e sem complicação. 
-   <p>
-    Trabalho com soluções práticas que renovam seu ambiente em pouco tempo, sem quebra-quebra e sem bagunça, garantindo um resultado moderno, durável e de alta qualidade.
-   </p> Com anos de experiência, ofereço soluções personalizadas para cada ambiente, garantindo um resultado impecável e duradouro.
-    </p> Aqui, você tem confiança, cuidado e um serviço feito para facilitar sua vida. ✨
+<section class="diferencial">
+    <div>
+        <h3>✔ Atendimento Rápido</h3>
+        <p>Agilidade do orçamento até a entrega</p>
+    </div>
+
+    <div>
+        <h3>✔ Qualidade Profissional</h3>
+        <p>Materiais duráveis e acabamento perfeito</p>
+    </div>
+
+    <div>
+        <h3>✔ Atendimento Regional</h3>
+        <p>Londrina e toda região</p>
+    </div>
 </section>
 
-<section class="servicos fade">
-  <h2>Serviços</h2>
-  <div class="grid">
-    <div><i class="fas fa-home"></i><p>Paredes</p></div>
-    <div><i class="fas fa-couch"></i><p>Móveis</p></div>
-    <div><i class="fas fa-tv"></i><p>Eletros</p></div>
-    <div><i class="fas fa-tint"></i><p>Áreas úmidas</p></div>
-  </div>
+<section class="servicos">
+    <h2>SERVIÇOS</h2>
+
+    <div class="grid">
+        <div class="card">FACHADAS COMERCIAIS</div>
+        <div class="card">FACHADAS PERSONALIZADAS</div>
+        <div class="card">BANNERS</div>
+        <div class="card">PLACAS</div>
+        <div class="card">ENVELOPAMENTO</div>
+        <div class="card">IDENTIDADE VISUAL</div>
+    </div>
 </section>
 
-<section class="galeria fade">
-  <h2>Projetos</h2>
-  <div class="imgs">
-    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba">
-    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea">
-    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
-    <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c">
-  </div>
+<section class="cta">
+    <h2>PRECISA DE UM ORÇAMENTO RÁPIDO?</h2>
+    <p>Fale direto no WhatsApp agora</p>
+    <a href="https://wa.me/5543999422005" class="btn">CHAMAR AGORA</a>
 </section>
 
-<section class="instagram fade">
-  <h2>Vem ver mais de perto</h2>
-  <a href="https://www.instagram.com/alves.adesivos/" target="_blank">Ver mais projetos</a>
-</section>
-
-<section class="mapa fade">
-  <h2>Atendemos Londrina e região</h2>
-  <iframe src="https://www.google.com/maps?q=Londrina&output=embed"></iframe>
+<section class="contato">
+    <h2>CONTATO</h2>
+    <p>📞 (43) 99942-2005</p>
+    <p>📍 Londrina - PR</p>
 </section>
 
 <footer>
-  <p>© 2026 Alves Adesivos</p>
+    <p>© 2026 A R DE LIMA AZALEIA COMUNICAÇÃO VISUAL</p>
 </footer>
 
-<button class="whatsapp-float" onclick="chamarWhats()">
-  <i class="fab fa-whatsapp"></i>
-</button>
+<a href="https://wa.me/554399422005" class="whatsapp">💬</a>
 
 <script src="script.js"></script>
-
 </body>
 </html>
